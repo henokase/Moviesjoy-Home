@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MoviesJoy - Henok</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./output.css">
+        <script src="https://kit.fontawesome.com/fc0e7b7945.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="layer" class="hidden fixed z-10 left-0 top-0 w-screen h-screen bg-slate-900 opacity-20"></div>
+        <div id="wrapper" class="w-full">
+            <!-- header -->
+            <header class="bg-veryDarkBlue px-3 py-1 flex flex-col max-xl:space-y-4 xl:px-20 lg:px-16 md:px-12 max-sm:py-4">
+                <!-- nav container -->
+                <nav class="flex justify-between items-center">
+                    
+                    <!-- hum sidebar menu -->
+                    <div class="xl:hidden">
+                        <!-- button -->
+                        <div id="hum-btn" class="w-8 h-8 px-[5px] cursor-pointer">
+                            <img src="asset/bars-solid.svg" class="w-full h-full">
+                        </div>
+                        
+                        <!-- mobile menu container -->
+                            <div id="mobile-menu"
+                                class="p-5 h-screen bg-black fixed z-20 -left-[150%] transition-left overflow-auto top-0 shadow-2xl">
+                                <!-- back button -->
+                                <div id="back-btn" 
+                                    class="bg-white rounded-full px-4 py-1 w-fit flex items-center justify-center cursor-pointer font-bold hover:bg-slate-600 hover:text-white">
+                                    Close menu
+                                </div>
+
+                                <!-- mobile links container -->
+                                <div class="capitalize my-5 font-bold">
+                                    <a href="#" class="text-lightWhite border-b-2 border-slate-800 py-5 block">home</a>
+
+                                    <!-- dropdown 1 -->
+                                    <div class="py-5 border-b-2 border-slate-800">
+                                        <div class="drop-btn text-lightWhite cursor-pointer">genre</div>
+                                        <div class="menu-content max-h-0 overflow-hidden transition-height shadow-2xl grid grid-cols-2 text-slate-300 gap-x-5 font-normal">
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">Action</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">Action & adventure</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">adventure</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">animation</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">biography</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">comedy</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">crime</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">documentary</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">drama</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">family</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">fantasy</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">history</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">horror</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">kids</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">music</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">mystery</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">news</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">reality</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">romance</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">sci-fi & fantasy</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">science fiction</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">soap</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">talk</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">thriller</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">tv movie</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">war</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">war & politics</a>
+                                            <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">western</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- dropdown 1 -->
+                                    <div class="py-5 border-b-2 border-slate-800">
+                                        <div class="drop-btn text-lightWhite cursor-pointer">country</div>
+                                        <div class="menu-content max-h-0 overflow-hidden transition-height shadow-2xl grid grid-cols-2 text-slate-300 gap-x-5 font-normal">
+                                            <a href="#" class=" text-left py-1 capitalize">argentina</a>
+                                            <a href="#" class=" text-left py-1 capitalize">australia</a>
+                                            <a href="#" class=" text-left py-1 capitalize">austria</a>
+                                            <a href="#" class=" text-left py-1 capitalize">belgium</a>
+                                            <a href="#" class=" text-left py-1 capitalize">brazil</a>
+                                            <a href="#" class=" text-left py-1 capitalize">canada</a>
+                                            <a href="#" class=" text-left py-1 capitalize">china</a>
+                                            <a href="#" class=" text-left py-1 capitalize">czech republic</a>
+                                            <a href="#" class=" text-left py-1 capitalize">denmark</a>
+                                            <a href="#" class=" text-left py-1 capitalize">finland</a>
+                                            <a href="#" class=" text-left py-1 capitalize">france</a>
+                                            <a href="#" class=" text-left py-1 capitalize">germany</a>
+                                            <a href="#" class=" text-left py-1 capitalize">hong kong</a>
+                                            <a href="#" class=" text-left py-1 capitalize">hungary</a>
+                                            <a href="#" class=" text-left py-1 capitalize">india</a>
+                                            <a href="#" class=" text-left py-1 capitalize">ireland</a>
+                                            <a href="#" class=" text-left py-1 capitalize">israel</a>
+                                            <a href="#" class=" text-left py-1 capitalize">italy</a>
+                                            <a href="#" class=" text-left py-1 capitalize">japan</a>
+                                            <a href="#" class=" text-left py-1 capitalize">luxembourg</a>
+                                            <a href="#" class=" text-left py-1 capitalize">mexico</a>
+                                            <a href="#" class=" text-left py-1 capitalize">netherlands</a>
+                                            <a href="#" class=" text-left py-1 capitalize">new zealand</a>
+                                            <a href="#" class=" text-left py-1 capitalize">norway</a>
+                                            <a href="#" class=" text-left py-1 capitalize">poland</a>
+                                            <a href="#" class=" text-left py-1 capitalize">romania</a>
+                                            <a href="#" class=" text-left py-1 capitalize">russia</a>
+                                            <a href="#" class=" text-left py-1 capitalize">south africa</a>
+                                            <a href="#" class=" text-left py-1 capitalize">south korea</a>
+                                            <a href="#" class=" text-left py-1 capitalize">spain</a>
+                                            <a href="#" class=" text-left py-1 capitalize">sweden</a>
+                                            <a href="#" class=" text-left py-1 capitalize">switzerland</a>
+                                            <a href="#" class=" text-left py-1 capitalize">taiwan</a>
+                                            <a href="#" class=" text-left py-1 capitalize">thailand</a>
+                                            <a href="#" class=" text-left py-1 capitalize">united kingdom</a>
+                                            <a href="#" class=" text-left py-1 capitalize">united states of amercia</a>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="text-lightWhite border-b-2 border-slate-800 py-5 block">movies</a>
+                                    <a href="#" class="text-lightWhite border-b-2 border-slate-800 py-5 block">tv shows</a>
+                                    <a href="#" class="text-lightWhite border-b-2 border-slate-800 py-5 block">top imdb</a>
+                                    <a href="#" class="text-lightWhite border-b-2 border-slate-800 py-5 block">android app</a>
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                    <!-- logo -->
+                    <div class="w-8 h-8">
+                        <img src="asset/logo.png" alt="" class="w-full h-full">
+                    </div>
+                    <!-- links -->
+                    <div class="flex gap-16 items-center uppercase max-xl:hidden">
+                        <a href="#" class="text-lightWhite hover:text-lightViolet">home</a>
+                        
+                        <!-- dropdown 1 -->
+                        <div class="group relative py-5">
+                            <div class="text-lightWhite hover:text-lightViolet cursor-pointer">genre</div>
+                            <div class="hidden z-50 p-2 shadow-2xl absolute left-0 top-16 min-w-[750px] group-hover:grid gap-x-3 grid-cols-4 text-slate-300 bg-heavyDarkViolet">
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">Action</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">Action & adventure</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">adventure</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">animation</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">biography</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">comedy</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">crime</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">documentary</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">drama</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">family</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">fantasy</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">history</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">horror</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">kids</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">music</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">mystery</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">news</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">reality</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">romance</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">sci-fi & fantasy</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">science fiction</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">soap</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">talk</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">thriller</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">tv movie</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">war</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">war & politics</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">western</a>
+                            </div>
+                        </div>
+
+                        <!-- dropdown 1 -->
+                        <div class="group relative py-5">
+                            <div class="text-lightWhite hover:text-lightViolet cursor-pointer">country</div>
+                            <div class="hidden z-50 p-2 shadow-2xl absolute left-0 top-16 min-w-[750px] group-hover:grid gap-x-3 grid-cols-4 text-slate-300 bg-heavyDarkViolet">
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">argentina</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">australia</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">austria</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">belgium</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">brazil</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">canada</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">china</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">czech republic</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">denmark</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">finland</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">france</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">germany</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">hong kong</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">hungary</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">india</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">ireland</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">israel</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">italy</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">japan</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">luxembourg</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">mexico</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">netherlands</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">new zealand</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">norway</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">poland</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">romania</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">russia</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">south africa</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">south korea</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">spain</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">sweden</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">switzerland</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">taiwan</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">thailand</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">united kingdom</a>
+                                <a href="#" class="pl-2 pr-4 text-left py-1 hover:text-black hover:bg-heavyViolet capitalize">united states of amercia</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-lightWhite hover:text-lightViolet">movies</a>
+                        <a href="#" class="text-lightWhite hover:text-lightViolet">tv shows</a>
+                        <a href="#" class="text-lightWhite hover:text-lightViolet">top imdb</a>
+                        <a href="#" class="text-lightWhite hover:text-lightViolet">android app</a>
+                    </div>
+                    <!-- login button -->
+                    <a href="#" 
+                        class="bg-lightWhite rounded-md capitalize text-lg flex items-center gap-2 px-2 py-1 max-xl:bg-inherit max-xl:hidden">
+                        <img src="asset/user-regular.svg" alt="" class="w-4"/>
+                        <p>login</p>
+                    </a>
+                    <a href="#" class="block xl:hidden w-6 h-6">
+                        <img src="asset/user_white.svg" alt="">
+                    </a>
+                </nav>
+                <!-- header text -->
+                <h1 class="text-3xl text-white text-center mt-16 max-xl:hidden">Find Movies, Tv shows and more</h1>
+                <!-- search form -->
+                <div class="flex justify-center items-center gap-4 relative -bottom-12 max-xl:bottom-0 max-xl:mt-3">
+                    <!-- input container -->
+                    <div class="w-[900px] h-20 rounded-full bg-white flex items-center pt-1 pr-12 pb-1 pl-5 max-xl:w-full max-xl:rounded-lg max-xl:h-10">
+                        <div class="w-5 h-5">
+                            <img src="asset/magnifying-glass-solid.svg" class="w-full h-full">
+                        </div>
+                        <input form="mine" type="text" placeholder="Enter keywords" class= "bg-inherit text-slate-400 w-full h-full text-xl px-3 focus:outline-none">
+                    </div>
+                    <!-- submit btn -->
+                    <div class="w-16 h-16 rounded-full bg-lightViolet hover:bg-violet-500 flex items-center justify-center max-xl:hidden">
+                        <img src="asset/arrow-right-solid.svg" class="h-8 w-8">
+                    </div>
+                </div>
+            </header>
+            
+            <!-- main section -->
+            <main class="bg-mainViolet px-3 py-8 text-lightWhite xl:px-20 lg:px-16 md:px-12 lg:py-24">
+                <p class="max-md:text-sm">
+                    free movies streaming, watch movies online, watch tv-series, full hd
+                    movies online, free tv-series online, watch hd movies free, watch
+                    series online, watch the walking dead online, watch prison break
+                    online, watch family guy online
+                  </p>
+
+                <div class="mt-20 max-md:mt-16">
+                    <!-- butons -->
+                    <div class="flex items-center gap-5">
+                        <h1 class="text-3xl max-md:hidden">Trending</h1>
+                        <div class="flex gap-2">
+                            <button id="movie-btn" class="bg-lightWhite current text-black px-3 py-1 font-semibold rounded-md">Movies</button>
+                            <button id="tv-btn" class="bg-lightWhite text-black px-3 py-1 font-semibold rounded-md">Tv Shows</button>
+                        </div>
+                    </div>
+
+                    <!-- grid container -->
+                    <div id="grid-container-movie" class="firstDiv"></div>
+                    <div id="grid-container-tv" class="firstDiv"></div>
+                </div>
+            </main>
+
+            <footer class="px-3 py-16 bg-footerViolet overflow-hidden text-lightWhite xl:px-20 lg:px-16 md:px-12">
+                <!-- flex container -->
+                <div class="flex justify-between max-lg:flex-col max-lg:gap-4">
+                    <!-- logo -->
+                    <div class="max-lg:order-3">
+                        <div class="mb-2 w-12 h-12 max-lg:hidden">
+                            <img src="asset/logo.png" class="w-full h-full">
+                        </div>
+                        <p>&copy; MoviesJoy</p>
+                    </div>
+
+                    <!-- about -->
+                    <div class="flex flex-col gap-2 text-[14px] w-[600px] max-lg:order-1 max-lg:w-full">
+                        <!-- desc -->
+                        <div>
+                            MoviesJoy is a Free Movies streaming site with zero ads. We let
+                            you watch movies online without having to register or paying, with
+                            over 10000 movies and TV-Series. You can also Download full movies
+                            from MoviesJoy and watch it later if you want.
+                          </div>
+                          <!-- links -->
+                          <div class="flex justify-between">
+                            <a href="#">Android App</a> - 
+                            <a href="#">Terms of service</a> - 
+                            <a href="#">Contact</a> - 
+                            <a href="#">Sitemap</a> - 
+                            <a href="#">FAQ</a>
+                          </div>
+                    </div>
+
+                    <!-- desclaimer -->
+                    <div class="text-[12px] border shadow-inner border-red-300 relative w-[200px] p-2 max-lg:w-full">
+                        <div class="absolute -right-1 -top-2 w-3 h-3 rounded-full bg-red-600">
+
+                        </div>
+                        <!-- note -->
+                        <div>
+                            MoviesJoy does not store any files on our server, 
+                            we only linked to the media which is hosted on 3rd party services.
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+
+        </div>
+
+        <script src="script.js" async defer></script>
+        <script src="movie.js" async defer></script>
+    </body>
+</html>

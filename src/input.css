@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-left {
+    transition-property: left;
+    transition-duration: 0.5s;
+  }
+  .transition-height {
+    transition-property: max-height;
+    transition-duration: 0.5s;
+  }
+}
+
+.firstDiv {
+    @apply mt-10 grid gap-3 grid-cols-2 xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-3;
+}
+
+.imageStyle {
+  @apply cursor-pointer relative w-full;
+}
+
+.img {
+    @apply w-full object-cover;
+}
+
+.hovered {
+    @apply hidden z-10 absolute left-0 top-0 w-full h-full bg-black opacity-40 group-hover:block;
+}
+
+.playBtn {
+    @apply hidden bg-lightViolet absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full justify-center items-center group-hover:flex;
+}
+
+.title {
+    @apply font-bold text-[14px] max-lg:text-[12px];
+}
+
+.desc {
+    @apply flex items-center justify-between text-[12px];
+}
+
+.span {
+    @apply h-0 text-xl font-bold;
+}
+
+.icon {
+    @apply px-1 max-sm:hidden;
+}
+
+.current {
+    @apply bg-lightViolet;
+}
