@@ -10,9 +10,9 @@
     </head>
     <body>
         <div id="layer" class="hidden fixed z-10 left-0 top-0 w-screen h-screen bg-slate-900 opacity-20"></div>
-        <div id="wrapper" class="w-full">
+        <div id="wrapper" class="h-screen w-full">
             <!-- header -->
-            <header class="bg-veryDarkBlue px-3 py-1 flex flex-col max-xl:space-y-4 xl:px-20 lg:px-16 md:px-12 max-sm:py-4">
+            <header class="bg-veryDarkBlue px-3 py-1 flex flex-col max-xl:space-y-4 xl:px-20 lg:px-16 md:px-12 max-xl:py-4">
                 <!-- nav container -->
                 <nav class="flex justify-between items-center">
                     
@@ -25,7 +25,7 @@
                         
                         <!-- mobile menu container -->
                             <div id="mobile-menu"
-                                class="p-5 h-screen bg-black fixed z-20 -left-[150%] transition-left overflow-auto top-0 shadow-2xl">
+                                class="p-5 h-screen w-92 bg-black fixed z-20 -left-[150%] transition-left overflow-auto top-0 shadow-2xl">
                                 <!-- back button -->
                                 <div id="back-btn" 
                                     class="bg-white rounded-full px-4 py-1 w-fit flex items-center justify-center cursor-pointer font-bold hover:bg-slate-600 hover:text-white">
@@ -33,13 +33,13 @@
                                 </div>
 
                                 <!-- mobile links container -->
-                                <div class="capitalize my-5 font-bold">
-                                    <a href="#" class="text-lightWhite border-b-2 border-slate-800 py-5 block">home</a>
+                                <div class="capitalize my-5 font-bold pt-4">
+                                    <a href="#" class="text-lightWhite border-b-2 border-slate-800 pb-5 block">home</a>
 
                                     <!-- dropdown 1 -->
-                                    <div class="py-5 border-b-2 border-slate-800">
+                                    <div class="py-3 border-b-2 border-slate-800">
                                         <div class="drop-btn text-lightWhite cursor-pointer">genre</div>
-                                        <div class="menu-content max-h-0 overflow-hidden transition-height shadow-2xl grid grid-cols-2 text-slate-300 gap-x-5 font-normal">
+                                        <div class="menu-content max-h-0 overflow-hidden transition-height shadow-2xl mt-2 grid grid-cols-2 text-slate-300 text-sm font-normal">
                                             <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">Action</a>
                                             <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">Action & adventure</a>
                                             <a href="#" class="pl-2 pr-4 text-left py-1 capitalize">adventure</a>
@@ -72,9 +72,9 @@
                                     </div>
 
                                     <!-- dropdown 1 -->
-                                    <div class="py-5 border-b-2 border-slate-800">
+                                    <div class="py-3 border-b-2 border-slate-800">
                                         <div class="drop-btn text-lightWhite cursor-pointer">country</div>
-                                        <div class="menu-content max-h-0 overflow-hidden transition-height shadow-2xl grid grid-cols-2 text-slate-300 gap-x-5 font-normal">
+                                        <div class="menu-content max-h-0 overflow-hidden transition-height mt-2 shadow-2xl grid grid-cols-2 text-slate-300 text-sm font-normal">
                                             <a href="#" class=" text-left py-1 capitalize">argentina</a>
                                             <a href="#" class=" text-left py-1 capitalize">australia</a>
                                             <a href="#" class=" text-left py-1 capitalize">austria</a>
